@@ -1,16 +1,206 @@
-# React + Vite
+# Inventory Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional Full-Stack Inventory Management System developed using FastAPI, React.js, SQLAlchemy, and SQLite. This application helps users manage inventory efficiently by adding, viewing, and deleting products through a modern web interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+✅ Add New Products
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✅ View Product Inventory
 
-## Expanding the ESLint configuration
+✅ Delete Products
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ FastAPI REST API
+
+✅ React Frontend
+
+✅ SQLite Database
+
+✅ SQLAlchemy ORM
+
+✅ Responsive User Interface
+
+✅ Real-Time Data Updates
+
+---
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Axios
+- CSS3
+- Vite
+
+### Backend
+- FastAPI
+- SQLAlchemy
+- Pydantic
+- SQLite
+
+### Tools
+- Git
+- GitHub
+- VS Code
+
+---
+
+## Project Structure
+
+```text
+Inventory Management System
+│
+├── Backend
+│   ├── app
+│   │   ├── database.py
+│   │   ├── models.py
+│   │   ├── schemas.py
+│   │   └── main.py
+│   │
+│   ├── requirements.txt
+│   └── inventory.db
+│
+├── frontend
+│   ├── src
+│   │   ├── App.jsx
+│   │   ├── App.css
+│   │   └── main.jsx
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+└── README.md
+```
+
+---
+
+## API Endpoints
+
+### Get All Products
+
+```http
+GET /products
+```
+
+### Add Product
+
+```http
+POST /products
+```
+
+Request Body:
+
+```json
+{
+  "name": "Laptop",
+  "quantity": 10,
+  "price": 50000
+}
+```
+
+### Delete Product
+
+```http
+DELETE /products/{id}
+```
+
+---
+
+## Installation Guide
+
+### Clone Repository
+
+```bash
+git clone https://github.com/garimamaurya/Inventory-Management-System.git
+```
+
+### Backend Setup
+
+```bash
+cd Backend
+
+python -m venv .venv
+
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+
+uvicorn app.main:app --reload
+```
+
+Backend URL:
+
+```text
+http://127.0.0.1:8000
+```
+
+Swagger Documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+---
+
+### Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Frontend URL:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Screenshots
+
+Add project screenshots here.
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### API Documentation
+
+![Swagger](screenshots/swagger.png)
+
+---
+
+## Future Enhancements
+
+- Product Category Management
+- Product Update Feature
+- Search and Filter Products
+- Low Stock Alerts
+- Inventory Analytics Dashboard
+- Authentication and Authorization
+- Cloud Database Integration
+- Deployment on Vercel and Render
+
+---
+
+## Resume Highlights
+
+- Built a Full-Stack Inventory Management System using React and FastAPI.
+- Developed RESTful APIs using FastAPI and SQLAlchemy.
+- Implemented CRUD operations with SQLite database.
+- Integrated frontend and backend using Axios.
+- Managed source code using Git and GitHub.
+
+---
+
+## Author
+
+**Garima Maurya**
+
+GitHub: https://github.com/garimamaurya
